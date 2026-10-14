@@ -1,0 +1,51 @@
+:root {
+  --display: 'Bricolage Grotesque', 'Avenir Next', system-ui, sans-serif;
+  --body: 'Source Sans 3', system-ui, sans-serif;
+
+  --bg: #e8edf1;
+  --panel: #f6f8fa;
+  --tissue: #fbfcfd;
+  --ink: #101b26;
+  --muted: #55636f;
+  --line: #cfd8df;
+  --line-strong: #9fb0bd;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0e151c;
+    --panel: #15202a;
+    --tissue: #1b2935;
+    --ink: #e8eef3;
+    --muted: #9aa8b5;
+    --line: #2a3a48;
+    --line-strong: #4d6275;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 1rem / 1.5 var(--body);
+}
+
+.sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+code {
+  font-size: 0.9em;
+}
