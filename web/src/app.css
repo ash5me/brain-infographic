@@ -49,3 +49,12 @@ body {
 code {
   font-size: 0.9em;
 }
+
+:root {
+  --teal: #0e7c86;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --teal: #46c2cc;
+  }
+}
